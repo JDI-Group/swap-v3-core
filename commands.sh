@@ -1,0 +1,1 @@
+hardhat --build-profile production ignition deploy ignition/modules/UniswapV3Factory.ts --network moonchainHudson

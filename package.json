@@ -1,21 +1,20 @@
 {
-  "name": "@uniswap/v3-core",
+  "type": "module",
+  "name": "@moonchain/swap-v3-core",
   "description": "🦄 Core smart contracts of Uniswap V3",
+  "packageManager": "pnpm@10.17.1",
   "license": "BUSL-1.1",
   "publishConfig": {
     "access": "public"
   },
   "version": "1.0.1",
-  "homepage": "https://uniswap.org",
+  "homepage": "https://moonchain.ai",
   "keywords": [
-    "uniswap",
-    "core",
-    "v3"
+    "moonchain",
+    "swap",
+    "v3",
+    "core"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v3-core"
-  },
   "files": [
     "contracts/interfaces",
     "contracts/libraries",
@@ -24,33 +23,19 @@
     "artifacts/contracts/interfaces/**/*.json",
     "!artifacts/contracts/interfaces/**/*.dbg.json"
   ],
-  "engines": {
-    "node": ">=10"
-  },
-  "dependencies": {},
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.2",
-    "@nomiclabs/hardhat-etherscan": "^2.1.8",
-    "@nomiclabs/hardhat-waffle": "^2.0.1",
-    "@typechain/ethers-v5": "^4.0.0",
-    "@types/chai": "^4.2.6",
-    "@types/mocha": "^5.2.7",
-    "chai": "^4.2.0",
-    "decimal.js": "^10.2.1",
-    "ethereum-waffle": "^3.0.2",
-    "ethers": "^5.0.8",
-    "hardhat": "^2.2.0",
-    "hardhat-typechain": "^0.3.5",
-    "mocha": "^6.2.2",
-    "mocha-chai-jest-snapshot": "^1.1.0",
-    "prettier": "^2.0.5",
-    "prettier-plugin-solidity": "^1.0.0-alpha.59",
-    "solhint": "^3.2.1",
-    "solhint-plugin-prettier": "^0.0.5",
-    "ts-generator": "^0.1.1",
-    "ts-node": "^8.5.4",
-    "typechain": "^4.0.0",
-    "typescript": "^3.7.3"
+    "@nomicfoundation/hardhat-ignition": "^3.0.3",
+    "@nomicfoundation/hardhat-ignition-viem": "^3.0.3",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^3.0.3",
+    "@nomicfoundation/hardhat-viem": "^3.0.0",
+    "@types/node": "^22.15.18",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.14.3",
+    "hardhat": "3.0.7",
+    "typescript": "~5.5.4",
+    "viem": "^2.29.2",
+    "wagmi": "^2.15.3"
   },
   "scripts": {
     "compile": "hardhat compile",
